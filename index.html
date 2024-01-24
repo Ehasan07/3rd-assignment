@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" theme-data="light">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -24,18 +24,21 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                      
                     }
                 }
             }
         }
     </script>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body class="fonty-manrope">
     <header>
+        <nav>
         <div class="navbar bg-base-100">
-            <div class="navbar-start">
+            <div class="flex-1">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -53,25 +56,68 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <h1 class="btn btn-ghost text-3xl">Hokey's</h1>
+                <h1 class="btn btn-ghost text-3xl">Hokey<p class="text-red-500">'</p>s</h1>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu text-base menu-horizontal px-1">
-                    <li ><a>Home</a></li>
+                    <li class="text-red-500" ><a>Home</a></li>
                     <li><a>About</a> </li>
-                    <li><a>Pages</a></li>
+                    <li><a>Pages</a></li> 
                     <li><a>Blog</a></li>
                     <li><a>Contact</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn">Get Ticket</a>
+            <div class="">
+                <button class="btn btn-error  text-white">Get Ticket</button>
             </div>
         </div>
+    </nav>
+    <!---slider section-->
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full height-600px">
+          <img src="1.png" class="width-1000 height-400px" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full height-600px">
+          <img src="hokey.png" class="width-1000 height-400px" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
 
-
+          
+            
+          </div>
+          
     </header>
     <main>
+        <div class="section bg-gray-100 p-4">
+            <h1 class="text-4xl font-bold text-center">Professional Hockeys Club</h1>
+            <p class="text-lg text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            <div class="flex justify-center gap-4 mt-8">
+              <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+                <span class="text-sm">Prayer Facility</span>
+                <p class="text-xs">Amet consectetur. Condimentum dignissim adipiscing.</p>
+              </div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                <span class="text-sm">Experienced Coach</span>
+                <p class="text-xs">Amet consectetur. Condimentum dignissim adipiscing.</p>
+              </div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span class="text-sm">Senior Player</span>
+                <p class="text-xs">Amet consectetur. Condimentum dignissim adipiscing.</p>
+              </div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span class="text-sm">Training Ground</span>
+                <p class="text-xs">Amet consectetur. Condimentum dignissim adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          
 
     </main>
 
